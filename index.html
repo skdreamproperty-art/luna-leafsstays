@@ -1375,7 +1375,7 @@
             <div class="gallery-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="living">Living Room</button>
-                <button class="filter-btn" data-filter="bedroom">Bedrooms</button>
+                <button class="filter-btn" data-filter="bedroom">Bedroom</button>
                 <button class="filter-btn" data-filter="balcony">Balcony</button>
             </div>
             <div class="gallery-grid" id="gallery-grid"></div>
@@ -1623,7 +1623,7 @@
                 status: "active",
                 image: "6.jpeg",
                 guests: 3,
-                bedrooms: 1,
+                bedroom: 1,
                 description: "Escape to this serene mountain retreat featuring panoramic views of the Himalayas. Our Shimla apartment combines rustic charm with modern luxury.",
                 gallery: ["bedroom.jpeg", "2.jpeg", "washroom.jpeg", "living.jpeg"],
                 amenities: ["Mountain Views", "Free Parking", "Smart TV", "Power Backup", "WiFi"]
@@ -1635,7 +1635,7 @@
                 status: "coming-soon",
                 image: "mohali.jpeg",
                 guests: 0,
-                bedrooms: 0,
+                bedroom: 0,
                 description: "Coming soon to the heart of Mohali. Experience modern urban living with state-of-the-art amenities.",
                 gallery: ["mohali.jpeg"],
                 amenities: ["Modern Interiors", "Business Ready", "Gym Access"]
@@ -1676,7 +1676,7 @@
                         <div class="card-content">
                             <div class="location-tag"><i class="fas fa-map-marker-alt"></i> ${apt.location}</div>
                             <h3 class="card-title">${apt.name}</h3>
-                            ${isActive ? `<div class="amenities-preview"><span><i class="fas fa-user"></i> ${apt.guests} Guests</span> <span><i class="fas fa-bed"></i> ${apt.bedrooms} Beds</span></div>` : ''}
+                            ${isActive ? `<div class="amenities-preview"><span><i class="fas fa-user"></i> ${apt.guests} Guests</span> <span><i class="fas fa-bed"></i> ${apt.bedroom} Beds</span></div>` : ''}
                             <div class="card-btn-wrapper">
                                 <button class="btn ${isActive ? 'btn-primary' : 'btn-dark'}" style="width: 100%; border-radius: 8px;" ${btnAction}>${btnText}</button>
                             </div>
@@ -1735,7 +1735,7 @@
             document.getElementById('modalTitle').textContent = currentApt.name;
             document.getElementById('modalLocation').textContent = currentApt.location;
             document.getElementById('modalGuests').innerHTML = `<i class="fas fa-user"></i> ${currentApt.guests} Guests`;
-            document.getElementById('modalBeds').innerHTML = `<i class="fas fa-bed"></i> ${currentApt.bedrooms} Bedrooms`;
+            document.getElementById('modalBeds').innerHTML = `<i class="fas fa-bed"></i> ${currentApt.bedroom} Bedroom`;
             document.getElementById('modalDesc').textContent = currentApt.description;
             document.getElementById('modalAmenities').innerHTML = currentApt.amenities.map(am => `<li><i class="fas fa-check"></i> ${am}</li>`).join('');
         }
