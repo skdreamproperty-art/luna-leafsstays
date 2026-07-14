@@ -1,0 +1,350 @@
+/* Mobile and tablet polish loaded after style.css */
+
+@media (max-width: 1024px) {
+    .container {
+        width: min(94%, 920px);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .apartment-showcase-main {
+        height: auto;
+        min-height: 0;
+        max-height: none;
+    }
+
+    .apartment-media-panel,
+    .apartment-content-panel {
+        height: auto;
+        max-height: none;
+    }
+}
+
+@media (max-width: 767px) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .section-padding {
+        padding: 58px 0;
+    }
+
+    .nav-menu {
+        padding: 80px 24px 36px;
+        gap: 22px;
+        overflow-y: auto;
+    }
+
+    .hero {
+        min-height: 620px;
+        height: 100svh;
+        padding: 96px 0 64px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.35rem, 12vw, 3.35rem);
+        line-height: 1.06;
+    }
+
+    .hero-content p {
+        max-width: 92%;
+        font-size: 0.98rem;
+        line-height: 1.7;
+    }
+
+    .hero-btns .btn {
+        width: min(100%, 320px);
+        justify-content: center;
+    }
+
+    .destinations-grid,
+    .reviews-grid,
+    .stats-grid,
+    .amenities-grid,
+    .footer-grid,
+    .apartment-grid,
+    .apartment-grid.compact-apartment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card {
+        height: 300px;
+    }
+
+    .apartment-grid,
+    .apartment-grid.compact-apartment-grid {
+        width: 100%;
+        max-width: none;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .apartment-compact-card,
+    .apartment-showcase-card {
+        border-radius: 18px;
+    }
+
+    .apartment-compact-image-wrap {
+        height: 230px;
+    }
+
+    .apartment-showcase-main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+    }
+
+    .apartment-media-panel {
+        height: clamp(270px, 68vw, 360px);
+        min-height: clamp(270px, 68vw, 360px);
+        max-height: 360px;
+    }
+
+    .apartment-main-image {
+        position: absolute;
+        height: 100%;
+        min-height: 100%;
+    }
+
+    .apartment-content-panel {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        padding: 24px 20px;
+        overflow: visible;
+    }
+
+    .apartment-detail-back {
+        margin: 16px 16px 0 auto;
+        min-height: 44px;
+        padding: 0 14px 0 9px;
+        font-size: 0.75rem;
+    }
+
+    .apartment-title {
+        font-size: 1.82rem;
+    }
+
+    .apartment-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apartment-benefits-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        height: auto;
+        min-height: 0;
+    }
+
+    .apartment-benefit {
+        height: auto;
+        min-height: 64px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .gallery-filters {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+    }
+
+    .gallery-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex: 0 0 auto;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .gallery-item {
+        height: 155px;
+    }
+
+    .amenities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .amenity-item {
+        min-height: 126px;
+        padding: 20px 12px;
+        justify-content: center;
+        border-radius: 12px;
+    }
+
+    .amenity-icon {
+        width: 42px;
+        height: 42px;
+        margin: 0 auto 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.55rem;
+        color: var(--color-gold);
+    }
+
+    .amenity-item h4 {
+        font-size: 0.92rem;
+        line-height: 1.25;
+        font-weight: 700;
+    }
+
+    .contact-wrapper,
+    .booking-form {
+        border-radius: 18px;
+        padding: 18px;
+    }
+
+    .booking-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .floating-whatsapp {
+        right: max(16px, env(safe-area-inset-right));
+        bottom: max(16px, env(safe-area-inset-bottom));
+        width: 54px;
+        height: 54px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .section-padding {
+        padding: 52px 0;
+    }
+
+    .hero {
+        min-height: 590px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.38rem;
+    }
+
+    .section-title {
+        font-size: 1.78rem;
+    }
+
+    .destination-card {
+        height: 260px;
+    }
+
+    .apartment-compact-image-wrap {
+        height: 205px;
+    }
+
+    .apartment-media-panel {
+        height: 255px;
+        min-height: 255px;
+        max-height: 255px;
+    }
+
+    .apartment-title {
+        font-size: 1.58rem;
+    }
+
+    .apartment-location-overlay {
+        left: 12px;
+        right: 12px;
+        bottom: 58px;
+        max-width: none;
+        width: auto;
+    }
+
+    .apartment-thumbnail-list {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .apartment-thumbnail-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .apartment-thumbnail,
+    .apartment-more-images {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        min-height: 34px;
+    }
+
+    .apartment-benefits-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 132px;
+    }
+
+    .amenities-grid {
+        gap: 12px;
+    }
+
+    .amenity-item {
+        min-height: 118px;
+        padding: 18px 10px;
+    }
+
+    .amenity-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.42rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-content h1 {
+        font-size: 2.05rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .apartment-detail-back {
+        font-size: 0.68rem;
+        gap: 8px;
+    }
+
+    .apartment-media-panel {
+        height: 238px;
+        min-height: 238px;
+        max-height: 238px;
+    }
+
+    .gallery-item {
+        height: 118px;
+    }
+}

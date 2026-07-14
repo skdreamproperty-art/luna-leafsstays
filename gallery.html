@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View all Luna & Leaf Stays property photos from Shimla and Mohali luxury serviced apartments.">
+    <title>Property Gallery | Luna & Leaf Stays</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body class="gallery-page">
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUNA <span>&</span> LEAF</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#destinations" class="nav-link" onclick="closeMenu()">Destinations</a></li>
+                <li><a href="index.html#apartments" class="nav-link" onclick="closeMenu()">Apartments</a></li>
+                <li><a href="index.html#amenities" class="nav-link" onclick="closeMenu()">Amenities</a></li>
+                <li><a href="gallery.html" class="nav-link" onclick="closeMenu()">Gallery</a></li>
+                <li><a href="index.html#reviews" class="nav-link" onclick="closeMenu()">Reviews</a></li>
+                <li><a href="index.html#contact" class="nav-link" onclick="closeMenu()">Contact</a></li>
+                <li>
+                    <a href="https://wa.me/917876810980" class="btn btn-primary nav-booking-btn" target="_blank"
+                        onclick="closeMenu()">
+                        <i class="fab fa-whatsapp"></i> BOOKING
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="gallery" class="section-padding gallery-page-section">
+            <div class="container reveal">
+                <div class="text-center">
+                    <span class="section-subtitle">Visual Tour</span>
+                    <h1 class="section-title">Property Gallery</h1>
+                </div>
+                <div class="gallery-filter-group" aria-label="Gallery category filters">
+                    <span class="filter-label">Room</span>
+                    <div class="gallery-filter-row">
+                        <div class="gallery-filters">
+                            <button class="filter-btn gallery-category-filter active" data-category="all"
+                                type="button">All</button>
+                            <button class="filter-btn gallery-category-filter" data-category="living"
+                                type="button">Living Room</button>
+                            <button class="filter-btn gallery-category-filter" data-category="bedroom"
+                                type="button">Bedrooms</button>
+                            <button class="filter-btn gallery-category-filter" data-category="kitchen"
+                                type="button">Kitchen</button>
+                            <button class="filter-btn gallery-category-filter" data-category="balcony"
+                                type="button">Balcony</button>
+                            <button class="filter-btn gallery-category-filter" data-category="exterior"
+                                type="button">Exterior</button>
+                        </div>
+                        <div class="gallery-location-dropdown" id="galleryLocationDropdown">
+                            <button class="gallery-location-trigger" type="button" aria-haspopup="listbox"
+                                aria-expanded="false">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="galleryLocationLabel"> Locations</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="gallery-location-menu" role="listbox" aria-label="Select gallery location">
+                                <button class="gallery-location-option active" type="button" role="option"
+                                    aria-selected="true" data-location="all"> Locations</button>
+                                <button class="gallery-location-option" type="button" role="option"
+                                    aria-selected="false" data-location="shimla">Shimla</button>
+                                <button class="gallery-location-option" type="button" role="option"
+                                    aria-selected="false" data-location="mohali">Mohali</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-grid" id="gallery-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright text-center">
+                <p>&copy; 2026 Luna & Leaf Stays - All Rights Reserved</p>
+                <p> Designed and Maintained by <i class="fa fa-heartbeat"> </i> &nbsp;<a
+                        href="http://www.pandasofts.com" target="_blank">
+                        Pandasofts</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917876810980" target="_blank" class="floating-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="lightbox" id="lightbox">
+        <div class="close-lightbox" onclick="closeLightbox()"><i class="fas fa-times"></i></div>
+        <img src="" alt="Zoom" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle" style="color: var(--color-gold); font-size: 1.2rem;"></i>
+        <span id="toastMsg">Success!</span>
+    </div>
+    <script src="java.js"></script>
+</body>
+
+</html>
