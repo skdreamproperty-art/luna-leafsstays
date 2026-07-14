@@ -13,7 +13,6 @@ const PROPERTY_IMAGES = {
         "balcony.PNG"
     ],
     mohali: [
-        "mohali flat.jpg",
         "design1.jpeg",
         "design2.jpeg",
         "design3.jpeg",
@@ -76,7 +75,6 @@ const galleryImages = [
     { src: "1.jpeg", location: "shimla", category: "living", alt: "Luna and Leaf Shimla luxury apartment living room" },
     { src: "6.jpeg", location: "shimla", category: "exterior", alt: "Luna and Leaf Shimla premium apartment view" },
     { src: "washroom.jpeg", location: "shimla", category: "exterior", alt: "Luna and Leaf Shimla apartment washroom" },
-    { src: "mohali flat.jpg", location: "mohali", category: "exterior", alt: "Luna and Leaf Mohali luxury apartment exterior" },
     { src: "design1.jpeg", location: "mohali", category: "living", alt: "Luna and Leaf Mohali luxury apartment living room" },
     { src: "design2.jpeg", location: "mohali", category: "living", alt: "Luna and Leaf Mohali premium lounge area" },
     { src: "design3.jpeg", location: "mohali", category: "living", alt: "Luna and Leaf Mohali modern apartment interiors" },
